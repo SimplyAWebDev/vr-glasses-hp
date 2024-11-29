@@ -53,6 +53,11 @@ header nav ul li:last-of-type {
     margin-right: 0;
 }
 
+header nav ul li a:hover {
+    color: #33C6DD;
+    
+}
+
 header nav ul li a {
     color: #3E3E3E;
     text-decoration: none;
@@ -120,6 +125,12 @@ section.hero button{
     cursor: pointer;
 }
 
+section.hero button:hover{
+    border: 1px solid #33C6DD;
+    background-color: white;
+    color: #33C6DD;;
+}
+
 section.best-sellers{
     padding-top: 5.625rem;
 }
@@ -159,6 +170,16 @@ section.best-sellers .product-slider .product {
     width: 33%;
     padding: 2.5rem 2.5rem;
     position: relative;
+}
+
+section.best-sellers .product-slider .product:hover {
+    cursor: pointer;
+}
+
+section.best-sellers .product-slider .product:hover button {
+    background-color: #33C6DD;
+    border: 1px solid #33C6DD;
+    color: white;
 }
 
 section.best-sellers .product-slider .product.new::before {
@@ -294,4 +315,68 @@ section.newsletter button[type=submit]{
     cursor: pointer;
 }
 
+section.newsletter button[type=submit]:hover{
+    background-color: white;
+    border: 1px solid #000;
+    height: 48px;
+    color: #614DC9;
+    cursor: pointer;
+}
 
+footer {
+    background-color: #3E3E3E;
+    color: white;
+    padding: 3.75rem;
+}
+
+footer .container{
+    display: flex;
+    max-width: 100%;
+    width: 59.375rem;
+    justify-content: space-between;
+}
+
+footer ul {
+    width: 25%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li.list-title{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.625;
+    margin-bottom: 1.25rem;
+}
+
+footer ul li{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color: #33C6DD;
+    text-decoration: none;
+}
+
+footer ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+section.copyright{
+    text-align: center;
+    color: #E0E0E0;
+    background-color: #2B2B2B;
+    padding: 1rem 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
