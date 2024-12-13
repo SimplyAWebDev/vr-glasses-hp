@@ -45,11 +45,16 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin-right: 1.625rem;
+    margin-left: 1.625rem;
     
 }
 
-header nav ul li:last-of-type {
+header nav ul li.menu-icon {
+    display: none;
+    
+}
+
+header nav ul li:first-of-type {
     margin-right: 0;
 }
 
@@ -163,6 +168,7 @@ section.best-sellers .product-slider .product {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 3.125rem;
     border: 1px solid #DDDDDD;
     border-radius: 8px;
@@ -516,15 +522,218 @@ section.copyright{
         max-width: 92%;
         
     }
+
+    header nav ul li {
+        display: none;
+        
+    }
     
+    header nav ul li.menu-icon {
+        display: inline-block;
+        
+    }
+
+    section.hero h1,
+    section.hero p{
+        margin-bottom: 0.75rem;
+        max-width: 400px;
+    }
+    
+    section.hero h1{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 500;
+        
+    }
+    
+    section.hero p{
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        
+    }
+    
+    section.hero button{
+        width: 200px;
+        height: 50px;
+        font-size: 0.875rem;
+       
+    }
+
+    section.best-sellers h2{
+        font-size: 2.125rem;
+        line-height: 2.625rem;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    section.best-sellers hr{
+        width: 4.125rem;
+        height: 0.375rem;
+        margin-bottom: 3rem;
+    }
+
+    section.best-sellers .product-slider .product.new::before {
+        top: 0.375rem;
+        right: 0.375rem;
+        justify-content: center;
+        padding: 5px 14px;
+       
+    }
+    
+    
+    section.best-sellers .product-slider .product h5 {
+        font-size: 0.688rem;
+        margin-bottom: 0.313rem;
+    }
+    
+    section.best-sellers .product-slider .product h4 {
+        font-size: 0.813rem;
+        margin-bottom: 0.438rem;
+    }
+    
+    section.best-sellers .product-slider .product .price {
+        margin-bottom: 1rem;
+    }
+    
+    section.best-sellers .product-slider .product .price h3 {
+        font-size: 1rem;
+    }
+    
+    section.best-sellers .product-slider .product .price span.original-price {
+        font-size: 0.563rem;
+    }
+    
+    section.best-sellers .product-slider .product .price.discount {
+        margin-bottom: 1rem;
+        color: #Ec1c1c;
+    }
+    
+    section.best-sellers .product-slider .product button {
+        height: 2.25rem;
+        width: 9.125rem;
+        line-height: 1.125rem;
+        font-size: 0.75rem;
+    }
+    
+    section.newsletter{
+        margin: 3rem auto;
+        width: 55rem;
+    }
+    
+    section.newsletter h3{
+        font-size: 1.375rem;
+    }
+    
+    footer .container{
+        width: 92%;
+        max-width: 92%;
+    }
 }
 /*#####################################*/
 /*Styles for Mobile*/
 /*#####################################*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 764px) {
     .container {
         width: 92%;
         max-width: 92%;
        
     }
+
+    header section.logo {
+        font-size: 1.125rem;
+    }
+    section.hero h1,
+    section.hero p{
+        margin-bottom: 2rem;
+        
+    }
+    
+    section.hero h1{
+        font-size: 2rem;
+        line-height: 2.375rem;
+        color: #000;
+    }
+    
+    section.hero p{
+        display: none;
+    }
+
+    section.hero .hero-content{
+        position: initial;
+        text-align: center;
+        margin-top: 1.625rem;
+    }
+
+    section.hero .container{
+        align-items: center;
+    }
+
+    section.best-sellers .product-slider .product {
+        width: 100%;
+        
+    }
+
+    section.best-sellers .product-slider .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1.5rem;
+    }
+    
+    section.best-sellers .product-slider .product h4 {
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+        
+    }
+    
+    section.best-sellers .product-slider .product .price span.original-price {
+        font-size: 0.688rem;
+    }
+    
+    section.best-sellers .product-slider .product button {
+        height: 36px;
+        width: 190px;
+        max-width: 100%;
+        line-height: 1.125rem;
+        font-size: 0.75rem;
+    }
+    
+    section.newsletter{
+        margin: 4rem auto;
+        padding: 2.75rem 0;
+       
+    }
+    
+    section.newsletter input[type=email]{
+        width: 13.125rem;
+        height: 3rem;
+    }
+    
+    section.newsletter button[type=submit]{
+        padding: 0 1.25rem;
+      
+    }
+    
+    footer {
+        padding: 3rem;
+    }
+    
+    footer .container{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    footer ul {
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    footer ul:last-of-type {
+        
+        margin-bottom: 0;
+    }
+    
 }
